@@ -1,11 +1,12 @@
 #include<stdio.h>
 int main()
 {
-int N,A,D,i,sum=0;
-scanf("%d %d %d",&N,&A,&D);
-for(i=N;i>1;i--)
-{
-sum=sum+(A+(N-1)*D);
-}
+int n,a,b,l;
+float sum;
+
+scanf("%d%d%d",&n,&a,&b);
+l=a+((n-1)*b);
+sum=(n/2)*(a+l);
+printf("the  value  of  sum is %d",sum);
 return 0;
 }
